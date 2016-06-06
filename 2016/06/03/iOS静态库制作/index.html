@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="静态库," />
 
 
 
@@ -84,16 +84,32 @@
 
 
 
-<meta name="description" content="你好">
+<meta name="description" content="制作静态库：Xcode————&amp;gt;New————&amp;gt;project————&amp;gt;iOS——————&amp;gt;Cocoa Touch Static Libary
+
+新建成功后，自动生成与文件名字相同的.h和.m文件(也可以删除之后新建，作者采用的是删除新建的方式)， 在Products文件夹中包含一个lib+项目名的.a文件（此时.a文件为红色）
+
+添加.h文件到Copy Files中，步">
 <meta property="og:type" content="article">
-<meta property="og:title" content="练习">
-<meta property="og:url" content="http://yoursite.com/2016/05/27/练习/index.html">
+<meta property="og:title" content="iOS静态库制作">
+<meta property="og:url" content="http://yoursite.com/2016/06/03/iOS静态库制作/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="你好">
-<meta property="og:updated_time" content="2016-05-27T08:58:50.000Z">
+<meta property="og:description" content="制作静态库：Xcode————&amp;gt;New————&amp;gt;project————&amp;gt;iOS——————&amp;gt;Cocoa Touch Static Libary
+
+新建成功后，自动生成与文件名字相同的.h和.m文件(也可以删除之后新建，作者采用的是删除新建的方式)， 在Products文件夹中包含一个lib+项目名的.a文件（此时.a文件为红色）
+
+添加.h文件到Copy Files中，步">
+<meta property="og:image" content="http://public.fotki.com/FlayAway/my-first-album/a8c5d4ec-2285-4f27-.html">
+<meta property="og:image" content="http://public.fotki.com/FlayAway/my-first-album/9c7a2c61-e8aa-4e2c-.html">
+<meta property="og:image" content="http://public.fotki.com/FlayAway/my-first-album/9c7a2c61-e8aa-4e2c-.html">
+<meta property="og:updated_time" content="2016-06-06T07:37:01.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="练习">
-<meta name="twitter:description" content="你好">
+<meta name="twitter:title" content="iOS静态库制作">
+<meta name="twitter:description" content="制作静态库：Xcode————&amp;gt;New————&amp;gt;project————&amp;gt;iOS——————&amp;gt;Cocoa Touch Static Libary
+
+新建成功后，自动生成与文件名字相同的.h和.m文件(也可以删除之后新建，作者采用的是删除新建的方式)， 在Products文件夹中包含一个lib+项目名的.a文件（此时.a文件为红色）
+
+添加.h文件到Copy Files中，步">
+<meta name="twitter:image" content="http://public.fotki.com/FlayAway/my-first-album/a8c5d4ec-2285-4f27-.html">
 
 
 
@@ -111,7 +127,7 @@
   };
 </script>
 
-  <title> 练习 | Hexo </title>
+  <title> iOS静态库制作 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -231,7 +247,7 @@
             
             
               
-                练习
+                iOS静态库制作
               
             
           </h1>
@@ -243,8 +259,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-05-27T16:58:23+08:00" content="2016-05-27">
-              2016-05-27
+            <time itemprop="dateCreated" datetime="2016-06-03T17:31:44+08:00" content="2016-06-03">
+              2016-06-03
             </time>
           </span>
 
@@ -271,8 +287,25 @@
       
 
       
-        <p>你好</p>
-
+        <ol>
+<li><p>制作静态库：<br>Xcode————&gt;New————&gt;project————&gt;iOS——————&gt;Cocoa Touch Static Libary<br><img src="http://public.fotki.com/FlayAway/my-first-album/a8c5d4ec-2285-4f27-.html" alt="Drawing" width="400px" hight="400
+px"></p>
+</li>
+<li><p>新建成功后，自动生成与文件名字相同的.h和.m文件(也可以删除之后新建，作者采用的是删除新建的方式)， 在Products文件夹中包含一个lib+项目名的.a文件（此时.a文件为红色）</p>
+</li>
+<li><p>添加.h文件到Copy Files中，步骤：TARGETS————&gt;Build Phsases————&gt;Copy Files  点击下方“+”<br><img src="http://public.fotki.com/FlayAway/my-first-album/9c7a2c61-e8aa-4e2c-.html" alt="Drawing" width="400px" hight="400
+px"></p>
+</li>
+<li>打包支持模拟器和真机的静态库（分别选择模拟器和真机运行，就会生成对应的静态库）</li>
+<li>如果需要生成支持不同架构的静态库，请到 PROJECT————&gt;Build Settings——————&gt;Architectures————&gt;Build Active Architecture Only ————&gt;Debug改为NO(此处根据需要制作Debug版本或Release版本)<br><img src="http://public.fotki.com/FlayAway/my-first-album/9c7a2c61-e8aa-4e2c-.html" alt="Drawing" width="400px" hight="400
+px"></li>
+<li>选中模拟器或真机，编译运行，此时.a文件会变成黑色。此时.a文件和.h 文件就可直接拖入需要的项目使用。</li>
+<li>合并版本：（合并出适用于模拟器和真机的.a文件）：a.将文件 show in finder ,会看到对应的静态库。b.在终端中进入对应文件，输入 lipo -create SQY/iOS/iphoneos/libGamePlusAPI.a SQY/iOS/iphonesimulator/libGamePlusAPI.a  -output SQY/iOS/libGamePus.a<br>其中SQY/iOS/iphoneos/libGamePlusAPI.a //为真机库。<br>SQY/iOS/iphonesimulator/libGamePlusAPI.a //为模拟器库<br>-output SQY/iOS/libGamePus.a //为两个合并后存放的路径<br>c.然后可以输入命令测试下是否成功<br>lipo -info SQY/iOS/libGamePus.a  //下面是输出 armv7 i386 有了两个就表情模拟器和真机都支持  其中armv7为真机架构 i386为模拟器<br>Architectures in the fat file: SQY/iOS/libGamePus.a are: armv7 i386<br>d.此时生成的.a文件，即为支持模拟器和真机的.a文件。</li>
+</ol>
+<p><a href="http://www.jianshu.com/p/8f5b9855efb8" target="_blank" rel="external">参考博客1：</a><br><a href="http://www.jianshu.com/p/df0548780cd0" target="_blank" rel="external">参考博客2:</a><br><a href="http://www.cnblogs.com/qingjoin/archive/2013/01/31/2886985.html" target="_blank" rel="external">参考博客3:</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">#import &lt;Foundation/Foundation.h&gt;</span><br><span class="line"></span><br><span class="line">@interface HSCalculate : NSObject</span><br><span class="line">+ (NSInteger)sumNum1:(NSInteger)num1 num2:(NSInteger)num2;</span><br><span class="line"></span><br><span class="line">@end</span><br><span class="line">#import &quot;HSCalculate.h&quot;</span><br><span class="line"></span><br><span class="line">@implementation HSCalculate</span><br><span class="line">+ (NSInteger)sumNum1:(NSInteger)num1 num2:(NSInteger)num2</span><br><span class="line">&#123;</span><br><span class="line">    return num1 + num2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@end</span><br></pre></td></tr></table></figure>
+<p>8.使用：<br> 导入静态库.a以及HSCalculate.h文件<br> 在VC中导入HSCalculate.h,调用+ (NSInteger)sumNum1:(NSInteger)num1 num2:(NSInteger)num2;</p>
+<a id="more"></a>
       
     </div>
 
@@ -291,18 +324,24 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/静态库/" rel="tag">#静态库</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/05/27/练习/" rel="next" title="练习">
+                <i class="fa fa-chevron-left"></i> 练习
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/06/03/iOS静态库制作/" rel="prev" title="iOS静态库制作">
-                iOS静态库制作 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
